@@ -1,0 +1,255 @@
+body {
+  margin: 0;
+  }
+
+/****************   Nav Section **********************/
+nav {
+	
+  background-color: #e2cff4;
+  border-bottom: 2px solid maroon;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+/***********************  Footer Section   **************************/
+footer {
+	background-color: #e2cff4;
+  border-top: 2px solid maroon;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*********** Splash Page ************************/
+header {
+  background: linear-gradient(180deg, #eaddf476 0%, #FAF7FC 100%);
+  text-align: center;
+  padding: 45px 20px 35px 20px;
+  box-shadow: 0 4px 12px rgba(128, 0, 0, 0.06);
+}
+
+header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.75rem;
+  font-weight: 700;
+  color: #800000; /* Maroon */
+  margin: 0 0 16px 0;
+  letter-spacing: 0.5px;
+}
+
+header img {
+  border-radius: 50%;
+  width: 225px;
+  height: 260px;
+  border: 3px solid #800000;
+  box-shadow: 0 4px 14px rgba(128, 0, 0, 0.15);
+  object-fit: cover;
+  margin-bottom: 18px;
+}
+
+.address {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.95rem;
+  color: #4A3B52; /* Deep muted plum/charcoal for clean readability */
+  line-height: 1.6;
+  margin: 0 0 10px 0;
+}
+
+.tagline {
+  font-size: 1.15rem;
+  font-style: italic;
+  color: #5C1D2E;
+  max-width: 650px;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+/************* Sections ********************/
+hr {
+  border: none;
+  border-top: 2px solid #800000;
+}
+
+section h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.6rem;
+  color: #5C1D2E; /* Wine/deep maroon color number */
+  margin-top: 30px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  text-decoration: underline;
+  text-decoration-color: #5C1D2E;
+}
+
+section h3 {
+  display: flex;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 1.4rem;
+  color: #5c1d2ecd; /* Wine/deep maroon color number */
+  margin: 30px 0 5px 20px;
+}
+
+.education,
+.honors,
+.skills,
+.experience {
+display: flex;
+justify-content: center;
+margin-bottom: 40px;
+}
+
+section dl {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  row-gap: 14px;
+  column-gap: 28px;
+  align-items: baseline;
+  width: 23%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.skills dl {
+  width: 26%;
+  max-width: 600px;
+}
+.experience dl{
+  width: 100%;
+  max-width: 600px;
+}
+
+section dt {
+  text-align: left;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+section dd {
+  margin: 0;
+  text-align: right;
+  white-space: normal;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+section ul {
+  list-style-type: square;
+  line-height: 1.5;
+  color: #4A3B52;
+  margin: 0 0 0 20px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 1.1rem;
+}
+
+section a {
+  color: #800000; /* Maroon color */
+  text-decoration: none; /* Remove default underline */
+  font-weight: 600;
+  transition: all 0.2s ease-in-out;
+}
+
+section a:hover {
+  color: #511826;
+  text-decoration: underline; 
+  background-color: rgba(217, 196, 236, 0.35); 
+  border-radius: 3px;
+  padding: 1px 4px;
+}
+
+/**************   Projects   *****************/
+.three-col {
+	display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 24px;
+  margin: 20px;
+}
+
+.card img {
+  width: 125px;
+  height: 125px;
+  object-fit: cover;
+  border-radius: 7%;
+  border: 2px solid #800000;
+  margin: 10px 0 16px 0;
+}
+
+.card {
+  background-color: #FAF7FC;
+  border: 1px solid #e2cff4;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 14px rgba(128, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  text-align: left;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/**************   Responsiveness   *****************/
+@media (max-width: 680px) {
+    nav {
+      flex-direction: column;
+      padding: 15px 10px;
+      gap: 12px;
+      text-align: center;
+    }
+
+    .three-col {
+      grid-template-columns: 1fr;
+      justify-items: center;
+      max-width: 400px;  
+      margin: 16px auto 0 auto;  
+      
+    }
+}
+
+/**************   Contact Page   *****************/
+.one-col {
+  display: flex;
+  flex-direction: column; /* Creates a 1-column layout for the form elements */
+  max-width: 500px;        /* Keeps the column at a clean, readable width */
+  margin: 0 auto;         /* Centers the column horizontally */
+  padding: 24px;
+  background-color: #FAF7FC;
+  border: 1px solid #e2cff4;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(128, 0, 0, 0.06);
+}
+
+input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px 12px;
+  margin-top: 4px;
+  margin-bottom: 14px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.95rem;
+  border: 1.5px solid #C4A7DE;
+  border-radius: 6px;
+  background-color: #FFFFFF;
+  color: #332738;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+
+}
+
+textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px 12px;
+  margin-top: 4px;
+  margin-bottom: 18px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.95rem;
+  border: 1.5px solid #C4A7DE;
+  border-radius: 6px;
+  background-color: #FFFFFF;
+  color: #332738;
+  outline: none;
+  resize: vertical;
+  min-height: 110px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
